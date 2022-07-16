@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import {level1} from "./components/level1";
+import {level2} from "./components/level2";
+import {level3} from "./components/level3";
+import {level4} from "./components/level4";
+import {level5} from "./components/level5";
+import {useState} from "react";
 
 function App() {
+
+  const [levelSelection, setLevelSelection] = useState([level1, level2, level3, level4, level5]);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
